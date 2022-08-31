@@ -1,0 +1,120 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="shortcut icon" href="assets/img/icon.svg " image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <title>GuitarShop</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="menu" class="header__botao">
+        
+        <label for="menu">
+            <span class="header__menu-hamburguer"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="" class="lista-menu__link">Guitars</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="" class="lista-menu__link">Basses</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="" class="lista-menu__link">Acoustics</a>
+            </li>
+        </ul>
+
+
+
+        <img src="assets/img/logo.svg" alt="Logo GuitarShop">
+    </header>
+
+    <section class="actions">
+        <a href="index.html" class="actions__back">
+            < back
+        </a>
+
+        <a href="#" class="actions__cart">
+            <img src="assets/img/cart.svg" alt="carrinho">
+        </a>
+    </section>
+    
+    <section class="product">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/img/popular1.svg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/product2.svg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/product3.svg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/product4.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="product__details">
+            <div class="details__group">
+                <div class="details__title">Model</div>
+                <div class="details__item">Fender Custom Shop Namm Ltd Edition</div>
+            </div>
+            <div class="details__group">
+                <div class="details__title">Year/ State</div>
+                <div class="details__item">57’ Heavy Relic HLE</div>
+            </div>
+            <div class="details__group">
+                <div class="details__title">Color</div>
+                <div class="details__item">Gold over 2 tone sunburst</div>
+            </div>
+            <div class="details__group">
+                <div class="details__title">Store</div>
+                <div class="details__item">Two Tone Guitars</div>
+            </div>
+            <div class="details__group">
+                <div class="details__title">Price</div>
+                <div class="details__item">$9.000</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy">
+        <div class="buy__qtd">
+            <p class="qtd__item">-</p>
+            <p class="qtd__item">1</p>
+            <p class="qtd__item">+</p>
+
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="buy__add">Add to cart</a>
+            <a href="checkout.html" class="buy__buy">Buy now</a>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <img src="assets/img/logo.svg" alt="logo GuitarShop">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 2,
+            slidesPerView: 1.7,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="shortcut icon" href="assets/img/icon.svg " image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GuitarShop</title>
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" id="menu" class="header__botao">
+        
+        <label for="menu">
+            <span class="header__menu-hamburguer"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="" class="lista-menu__link">Guitars</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="" class="lista-menu__link">Basses</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="" class="lista-menu__link">Acoustics</a>
+            </li>
+        </ul>
+
+
+
+        <img src="assets/img/logo.svg" alt="Logo GuitarShop">
+    </header>
+
+    <section class="search">
+        <input type="search" name="search bar" id="search-bar" placeholder="Search">
+    </section>
+    
+    <section class="popular">
+        <h2 class="popular__title"> Most popular</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="product.html">
+                        <img src="assets/img/popular1.svg" alt="">
+                        <div class="popular__desc">
+                            <p class="popular__desc--text">Fender Custom Shop Namm Ltd Edition</p>
+                            <p class="popular__desc--text">$9.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="assets/img/popular2.svg" alt="">
+                        <div class="popular__desc">
+                            <p class="popular__desc--text">Tele Custom Shop Ltd Edition</p>
+                            <p class="popular__desc--text">$8.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="assets/img/popular3.svg" alt="">
+                        <div class="popular__desc">
+                            <p class="popular__desc--text">Fender Custom Shop Namm Ltd Edition</p>
+                            <p class="popular__desc--text">$11.000</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="assets/img/popular4.svg" alt="">
+                        <div class="popular__desc">
+                            <p class="popular__desc--text">Fender Custom Shop Namm Ltd Edition</p>
+                            <p class="popular__desc--text">$4.000</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="news">
+        <h2 class="news__title">News</h2>
+        <article class="news__card">
+            <a href="#">
+                <img src="assets/img/news3.svg" alt="" class="news__img">
+                <div class="card__text">
+                    <div class="card__title">Why the new Fender Custom Shop Guitars are so exclusives?</div>
+                    <div class="card__time">4 min read</div>
+                </div>
+            </a>
+        </article>
+
+        <article class="news__card">
+            <a href="#">
+                <img src="assets/img/news2.svg" alt="" class="news__img">
+                <div class="card__text">
+                    <div class="card__title">You really need know what’s a baritone guitar and how use that</div>
+                    <div class="card__time">8 min read</div>
+                </div>
+            </a>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <img src="assets/img/logo.svg" alt="logo GuitarShop">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 2,
+            slidesPerView: 1.7,
+        });
+    </script>
+</body>
+</html>

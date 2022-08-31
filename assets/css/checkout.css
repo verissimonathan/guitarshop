@@ -1,0 +1,143 @@
+:root {
+    --cinza-principal: #1e1e1e; 
+    --amarelo: #CAAB3D;
+    --branco: #f7f7f7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: var(--cinza-principal);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    position: relative;
+}
+
+.header__menu-hamburguer {
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.header__botao {
+    display: none;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.header__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__item {
+    padding: 16px;
+    background-color: var(--cinza-principal);
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.actions__back {
+    text-decoration: none;
+    color: var(--cinza-principal);
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 16px;
+}
+
+.product__img {
+    width: 160px;
+}
+
+.product__details {
+    margin-left: 8px;
+}
+
+.details__group {
+    padding: 8px;
+}
+
+.details__title {
+    font-size: 14px ;
+    font-weight: light;
+    color: #303030;
+    margin-bottom: 4px;
+}
+
+.details__item {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+
+.personal {
+    margin: 16px;
+}
+
+.personal__group,
+.payment__group {
+    padding: 8px;
+}
+
+.payment {
+    margin: 16px;
+    border: 1px solid var(--amarelo);
+    border-radius: 24px;
+    padding: 16px;
+}
+
+.payment__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy {
+    margin: 16px;
+}
+
+.buy__buy {
+    background-color: var(--amarelo);
+    color: var(--branco);
+    font-size: 18px ;
+    font-weight: 700;
+    border: none;
+    border-radius: 16px;
+    padding: 16px 40px;
+    text-align: center;
+    width: 100%;
+    margin-top: 24px ;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--cinza-principal);
+    padding: 24px;
+    text-align: center;
+    width: 100vw;
+}
